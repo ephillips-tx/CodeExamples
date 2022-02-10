@@ -1,0 +1,154 @@
+:root {
+    --primary-color: #1d5888;
+    --secondary-color: #ff993b;
+    --dark-color: #292929;
+    --white-color: #e7e7e7;
+}
+
+html {
+    font-size: 1rem
+}
+
+.logoFont {
+    font-family: 'Black Ops One', cursive; /* from Google fonts */
+}
+
+body {
+    color: var(--dark-color);
+}
+
+nav {
+    background-color: var(--dark-color);
+}
+
+footer {
+    background-color: var(--dark-color);
+    padding-right: 1rem
+}
+
+footer .social>a {
+    color: var(--white-color);
+    opacity: .75;
+}
+
+footer .social>a:hover {
+    opacity: .9;
+    color: var(--secondary-color);
+}
+
+.checklist > li i {
+    color: var(--secondary-color)
+}
+
+code[class*="language-"],
+pre[class*="language-"] {
+    white-space: pre-wrap;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
+.bsicon, .jsicon, .html5icon, .cssicon {
+    font-size: 4rem
+}
+
+.bsicon {
+    color: purple
+}
+.jsicon {
+    color: rgb(226,211,4)
+}
+.html5icon {
+    color: orangered
+}
+.cssicon {
+    color: rgb(11,82,214)
+}
+
+h1,h2,h3,h4,h5,h6 {
+    color: var(--primary-color);
+}
+
+main>.container {
+    padding: 60px 15px 0;
+    margin-bottom: 5em;
+}
+
+.sticky-footer {
+    position: sticky;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+/*
+  CHANGE FONT SIZE FOR DIFFERENT SCREEN SIZES
+*/
+
+@media only screen and (min-width: 575px){
+    footer {
+        font-size: .8rem
+    }
+}
+
+@media only screen and (min-width: 776px){
+    .bsicon, .jsicon, .html5icon, .cssicon {
+        font-size: 5rem;
+    }
+}
+
+@media only screen and (min-width: 991px){
+    footer {
+        font-size: 1rem;
+    }
+
+    .bsicon, .jsicon, .html5icon, .cssicon {
+        font-size: 6rem;
+    }
+}
+
+/*
+  FOR ROTATED MOBILE SCREENS
+*/
+@media only screen and (max-height: 400px){
+    html {
+        font-size: .8rem;
+        text-align: center;
+    }
+    div.container {
+        margin-bottom: 0;
+        padding-bottom: 0
+    }
+    .checklist {
+        display: flex;
+        margin-left: 1.9rem;
+        overflow: none;
+    }
+    .checklist > li {
+        padding: .7em 2.5em .5em 0;
+    }
+    #appBtn {
+        display: flex;
+        justify-content: center;
+        margin: 1em 0 2em;
+    }
+    #appBtn > a {
+        width: 9em;
+        padding: 1rem;
+    }
+    #logoCol {
+        margin-top: 3%
+    }
+    #img-logo {
+        max-width: 50%
+    }
+    #iconRow {
+        display: flex;
+        justify-content: center;
+    }
+    #iconRow > * {
+        max-width: 9em;
+    }
+    .bsicon, .jsicon, .html5icon, .cssicon {
+        font-size: 4rem;
+    }
+}
