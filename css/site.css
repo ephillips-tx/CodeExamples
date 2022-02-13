@@ -80,6 +80,10 @@ main>.container {
     width: 100%;
 }
 
+p {
+    margin: 0;
+}
+
 /*
   CHANGE FONT SIZE FOR DIFFERENT SCREEN SIZES
 */
